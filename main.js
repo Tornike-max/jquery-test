@@ -15,15 +15,19 @@
 //   }
 // });
 
-let viewLogin = false;
-const changepwdtype = () => {
-  let getPwdType = $("#viewPwd");
+// let viewLogin = false;
+// const changepwdtype = () => {
+//   let getPwdType = $("#viewPwd");
 
-  if (viewLogin === false) {
-    getPwdType.attr("type", "text");
-    viewLogin = true;
-  } else if (viewLogin === true) {
-    getPwdType.attr("type", "password");
-    viewLogin = false;
-  }
-};
+//   if (viewLogin === false) {
+//     getPwdType.attr("type", "text");
+//     viewLogin = true;
+//   } else if (viewLogin === true) {
+//     getPwdType.attr("type", "password");
+//     viewLogin = false;
+//   }
+// };
+
+$(document).ready(() => {
+  $("#container").after("<p>a new string</p>");
+});
