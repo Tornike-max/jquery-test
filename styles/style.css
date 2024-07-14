@@ -1,0 +1,23 @@
+.content-box {
+    width: 240px;
+    background-color: blue;
+    height: 60px;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.content-before {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+}
+
+.content-after {
+    display: none;
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+    line-height: 16px;
+    opacity: 0;
+}

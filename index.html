@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script>
+      $(document).ready(function () {
+        $(".content-box").click(function () {
+          $(".content-box").animate(
+            {
+              width: "400px",
+              height: "300px",
+            },
+            1000
+          );
+
+          $(".content-after")
+            .show()
+            .animate({ opacity: "1" }, 3000)
+            .animate({ fontSize: "20px" }, 3000);
+        });
+
+        $("#btn").click(function () {
+          $(".content-box").stop(true, true);
+          $(".content-after").stop(true, true);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Welcome to My Website</h1>
+    </header>
+
+    <button id="btn">Stop Animations</button>
+    <main class="content-box">
+      <p class="content-before">click me to see more</p>
+      <p class="content-after">
+        This is a paragraph within a section.This is a paragraph within a
+        section. This is a paragraph within a section. This is a paragraph
+        within a section. This is a paragraph within a section. This is a
+        paragraph within a section.
+      </p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
